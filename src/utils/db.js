@@ -5,7 +5,7 @@ import models from '../models/index.js'
 const sequelize = new Sequelize({
     dialect: 'postgres',
     username: 'postgres',
-    database: 'look',
+    database: 'todo',
     host: 'localhost',
     password: 1234 + '',
     port: 5432,
