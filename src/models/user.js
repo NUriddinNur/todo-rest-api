@@ -38,8 +38,10 @@ export default async function ({ sequelize }) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                isIn: [['male', 'female']],
-                msg: 'Invalid gender. The value must be either male or demal!'
+                isIn: {
+                    args: [['male', 'female']],
+                    msg: 'Invalid gender. The value must be either male or femal!'
+                }
             } 
         },
 
